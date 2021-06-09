@@ -2,7 +2,7 @@ TRAINING_DIR = 'data/MNIST/train'
 VALIDATION_DIR = 'data/MNIST/val'
 TEST_DIR = 'data/MNIST/test'
 
-MODEL_PATH = '/models'
+MODEL_PATH = '../../models'
 EPOCHS = 10
 BATCH_SIZE = 64
 LEARNING_RATE = 1e-3
