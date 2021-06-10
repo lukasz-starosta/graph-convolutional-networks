@@ -1,5 +1,3 @@
-import numpy as np
-
 from utils.confusion_matrix import generate_conf_matrix
 
 

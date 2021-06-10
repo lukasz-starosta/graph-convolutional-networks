@@ -4,21 +4,6 @@ import torch
 from utils.io.save_wrong_result import save_wrong_result
 
 
-# def validate(model, data):
-#     total = 0
-#     correct = 0
-#
-#     for batch in data:
-#         batch.to(device)
-#         x = model(batch)
-#         value, pred = torch.max(x, 1)
-#         pred = pred.data.cpu()
-#         total += float(x.size(0))
-#         correct += float(torch.sum(pred == labels))
-#
-#     return correct * 100. / total
-
-
 def validate_cel(model, data, cel, device):
     total = 0
     correct = 0

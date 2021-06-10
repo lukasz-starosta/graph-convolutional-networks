@@ -1,5 +1,3 @@
-from torchvision import models
-from collections import OrderedDict
 import torch
 import torch.nn.functional as F
 import torch_geometric.transforms as T
