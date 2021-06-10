@@ -61,3 +61,4 @@ def train(model, device, training_dataloader, validation_dataloader):
     plt.legend()
     plt.show()
 
+    return best_model

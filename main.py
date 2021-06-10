@@ -1,4 +1,5 @@
 from model import GCN
+from test import test
 from train import train
 from utils.get_device import get_device
 from torch_geometric.data import DataLoader
@@ -19,5 +20,7 @@ test_dataloader = DataLoader(test_dataset, batch_size=BATCH_SIZE)
 device = get_device()
 model = GCN(training_dataset).to(device)
 
-train(model, device=device, training_dataloader=training_dataloader,
-      validation_dataloader=validation_dataloader)
+model = train(model, device=device, training_dataloader=training_dataloader,
+              validation_dataloader=validation_dataloader)
+
+test(model, test_dataloader=test_dataloader, test_dataset=test_dataset, device=device)
