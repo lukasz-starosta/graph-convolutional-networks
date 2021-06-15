@@ -1,0 +1,6 @@
+DATA_DIR = 'data/Planetoid'
+
+MODEL_PATH = 'models'
+EPOCHS = 150
+LEARNING_RATE = 0.01
+WEIGHT_DECAY = 5e-4
